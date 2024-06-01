@@ -6,7 +6,8 @@
 
     <!---FONT AWESOME --->
     <link
-      rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
 
@@ -15,37 +16,251 @@
   <body>
     <!----- HEADER DESIGN --->
     <header class="header">
-      <a href="#" class="logo"> Portfolio</a>
+      <a href="#" class="logo">Unique</a>
       <i class="fa-solid fa-bars" id="menu-icon"></i>
       <nav class="navbar">
-        <a href="#Home" class="active">HOME</a>
-        <a href="#About" About="active">HOME</a>
-        <a href="#Services" Services="active">HOME</a>
-        <a href="#Portfolio" Portfolio="active">HOME</a>
-        <a href="#Contact" Contact="active">HOME</a>
+        <a href="#Home" class="active">Home</a>
+        <a href="#About" About="active">About</a>
+        <a href="#Services" Services="active">Services</a>
+        <a href="#Portfolio" Portfolio="active">Portfolio</a>
+        <a href="#Contact" Contact="active">Contact</a>
       </nav>
     </header>
 
     <!--Home Section Design-->
-    <secttion class="home" id="home"></secttion>
-    <div class="home-content"></div>
-    <h3>Hi, Myself</h3>
-    <h1>Unique Tandukar</h1>
-    <h3>And I'm a Junior Developer</h3>
-    <p>
-      Hello! I’m [Your Name], a curious soul with an insatiable appetite for
-      learning and exploring the wonders of the world. With a passion for [your
-      field or hobby], I thrive on challenges and embrace opportunities to grow
-      both personally and professionally.
-    </p>
-    <div class="social-media"></div>
-    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-    <a href="#"><i class="fa-brands fa-viber"></i></a>
+    <section class="Home" id="Home">
+      <div class="Home-content">
+        <h3>Hi, Myself</h3>
+        <h1>Unique Tandukar</h1>
+        <h3>And I'm a Junior Developer</h3>
+        <p>
+          Hello! I’m Unique Tandukar, a curious soul with an insatiable appetite
+          for learning and exploring the wonders of the world. With a passion
+          for [your field or hobby], I thrive on challenges and embrace
+          opportunities to grow both personally and professionally.
+        </p>
+        <div class="social-media">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-viber"></i></a>
+        </div>
+        <a href="#" class="btn">Download CV</a>
+      </div>
 
-    <script>
-      src = "JS/main.js";
-    </script>
+      <div class="Home-img">
+        <img src="IMG_5533.JPG" alt="Circular Image" class="circle-image" />
+      </div>
+    </section>
+
+    <!--ABOUT SECTION DESIGN-->
+    <section class="About" id="About">
+      <div class="About-img">
+        <img src="" alt="" />
+      </div>
+
+      <div class="About-content">
+        <h2 class="heading">ABOUT <span>ME</span></h2>
+        <h3>Junior Developer</h3>
+        <p>
+          Hello! I’m Unique Tandukar, a curious soul with an insatiable appetite
+          for learning and exploring the wonders of the world. With a passion
+          for [your field or hobby], I thrive on challenges and embrace
+          opportunities to grow both personally and professionally.
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <!--SERVICES SECTION DESIGN-->
+    <section class="Services" id="Services">
+      <h2 class="heading">My<span>Services</span></h2>
+
+      <div class="Services-container">
+        <div class="Services-box">
+          <i class="fa-solid fa-code"></i>
+          <h3>Web Development</h3>
+          <p>
+            Web development involves the creation and maintenance of websites
+            and web applications. It encompasses various aspects, including
+            frontend development, backend development, full-stack development,
+            web design, responsive design, accessibility, performance
+            optimization, and security. Backend developers handle server-side
+            logic, database management, and server interactions using languages
+            such as JavaScript (Node.js), Python (Django), or PHP (Laravel).
+            Full-stack developers are proficient in both frontend and backend
+            development, allowing them to work on all aspects of web
+            applications.
+          </p>
+          <a href="#" class="btn">Read more</a>
+        </div>
+
+        <div class="Services-box">
+          <i class="fa-solid fa-palette"></i>
+          <h3>Ui/Ux Designing</h3>
+          <p>
+            UI/UX design is the practice of creating digital interfaces that are
+            both visually appealing and user-friendly. UI (User Interface)
+            design focuses on the look and feel of a product, including its
+            layout, color scheme, typography, and visual elements. This includes
+            aspects such as usability, accessibility, and the flow of the user
+            journey. UI/UX designers work together to understand user needs,
+            conduct research, create wireframes and prototypes, and iterate on
+            designs to ensure a seamless and enjoyable user experience.
+          </p>
+          <a href="#" class="btn">Read more</a>
+        </div>
+
+        <div class="Services-box">
+          <i class="fa-brands fa-android"></i>
+          <h3>App Development</h3>
+          <p>
+            App development involves the process of creating software
+            applications for mobile devices, such as smartphones and tablets. It
+            encompasses various stages, including ideation, design, development,
+            testing, and deployment. The development process often involves
+            collaboration between different roles, including developers,
+            designers, product managers, and quality assurance testers.
+            Throughout the development cycle, app developers focus on creating
+            functional, user-friendly, and performant applications that meet the
+            needs and expectations of their target audience.
+          </p>
+          <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+    </section>
+
+    <!--PORTFOLIO SECTION DESIGN-->
+    <section class="Portfolio" id="Portfolio">
+      <h2 class="heading">Latest<span>Projects</span></h2>
+      <div class="Portfolio-container">
+        <div class="Portfolio-box">
+          <img src="One.jpg" alt="" />
+          <div class="Portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Web design is a crucial aspect of creating an effective online
+              presence. It encompasses a range of disciplines and skills in the
+              production and maintenance of websites, including graphic design,
+              interface design, authoring, user experience design, and search
+              engine optimization. Good web design focuses on creating sites
+              that are not only visually appealing but also functional,
+              user-friendly, and accessible to a wide audience.
+            </p>
+            <i class="fa-solid fa-up-right-from-square"></i>
+          </div>
+        </div>
+
+        <div class="Portfolio-box">
+          <img src="Two.jpg" alt="" />
+          <div class="Portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Web design is a crucial aspect of creating an effective online
+              presence. It encompasses a range of disciplines and skills in the
+              production and maintenance of websites, including graphic design,
+              interface design, authoring, user experience design, and search
+              engine optimization. Good web design focuses on creating sites
+              that are not only visually appealing but also functional,
+              user-friendly, and accessible to a wide audience.
+            </p>
+            <i class="fa-solid fa-up-right-from-square"></i>
+          </div>
+        </div>
+
+        <div class="Portfolio-box">
+          <img src="Three.png" alt="" />
+          <div class="Portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Web design is a crucial aspect of creating an effective online
+              presence. It encompasses a range of disciplines and skills in the
+              production and maintenance of websites, including graphic design,
+              interface design, authoring, user experience design, and search
+              engine optimization. Good web design focuses on creating sites
+              that are not only visually appealing but also functional,
+              user-friendly, and accessible to a wide audience.
+            </p>
+            <i class="fa-solid fa-up-right-from-square"></i>
+          </div>
+        </div>
+
+        <div class="Portfolio-box">
+          <img src="Four.png" alt="" />
+          <div class="Portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Web design is a crucial aspect of creating an effective online
+              presence. It encompasses a range of disciplines and skills in the
+              production and maintenance of websites, including graphic design,
+              interface design, authoring, user experience design, and search
+              engine optimization. Good web design focuses on creating sites
+              that are not only visually appealing but also functional,
+              user-friendly, and accessible to a wide audience.
+            </p>
+            <i class="fa-solid fa-up-right-from-square"></i>
+          </div>
+        </div>
+
+        <div class="Portfolio-box">
+          <img src="Five.jpg" alt="" />
+          <div class="Portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Web design is a crucial aspect of creating an effective online
+              presence. It encompasses a range of disciplines and skills in the
+              production and maintenance of websites, including graphic design,
+              interface design, authoring, user experience design, and search
+              engine optimization. Good web design focuses on creating sites
+              that are not only visually appealing but also functional,
+              user-friendly, and accessible to a wide audience.
+            </p>
+            <i class="fa-solid fa-up-right-from-square"></i>
+          </div>
+        </div>
+
+        <div class="Portfolio-box">
+          <img src="Six.png" alt="" />
+          <div class="Portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Web design is a crucial aspect of creating an effective online
+              presence. It encompasses a range of disciplines and skills in the
+              production and maintenance of websites, including graphic design,
+              interface design, authoring, user experience design, and search
+              engine optimization. Good web design focuses on creating sites
+              that are not only visually appealing but also functional,
+              user-friendly, and accessible to a wide audience.
+            </p>
+            <i class="fa-solid fa-up-right-from-square"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--CONTACT SECTION DESIGN-->
+    <section class="Contact" id="Contact">
+      <h2 class="heading">Contact<span>Me</span></h2>
+
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder=" Email Address" />
+        </div>
+
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number" />
+          <input type="text" placeholder=" Email Subject" />
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your message">
+        </textarea>
+        <input type="Submit" value="Send Message" class="btn" />
+        >
+      </form>
+    </section>
+
+    <!--FOOTER SECTION DESIGN-->
+
+    <script src="JS/main.js"></script>
   </body>
 </html>

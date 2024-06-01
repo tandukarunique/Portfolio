@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --bg-color: black;
+  --snd-bf-color: black;
+  --text-color: white;
+  --main-color: skyblue;
+}
+
+html {
+  font-size: 60.5%;
+  overflow: hidden;
+}
+
+body {
+  top: 0rem;
+  background: black;
+  color: var(--text-color);
+}
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2 rem;
+}
+
+.header {
+  position: fixed;
+  top: 0rem;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: green;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 700;
+  cursor: default;
+  margin-top: 2px;
+}
+
+.navbar a {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  font-weight: 700;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--text-color);
+}
+
+#menu-icon {
+  font: size 3.6rem;
+  color: var(--main-color);
+  display: none;
+}
+
+.Home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home-content h3 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  /* margin-bottom: 30px; */
+  /* color: aqua; */
+}
+.Home-content h3:nth-of-type(2) {
+  margin-bottom: 2rem;
+}
+
+span {
+  color: var(--main-color);
+}
+
+.Home-content h1 {
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: 9rem;
+}
+
+.Home-img img {
+  /* width: 25vw; */
+  width: 200px; /* Set width to desired size */
+  height: 200px; /* Set height to desired size */
+  animation: floatImage 4s ease-in-out infinite;
+  margin-right: 10px;
+  margin-bottom: 105rem;
+  border-radius: 50%; /* Makes the image circular */
+  border: 5px solid #000; /* Optional: Add a border with desired color and width */
+  object-fit: cover;
+}
+
+.Home-content {
+  margin-bottom: 50px;
+}
+
+.Home-content p {
+  font-size: 20px;
+  color: white;
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 100%;
+  font-size: 2rem;
+  color: skyblue;
+  margin: 10px;
+  transition: background-color 1s, transform 0.5s;
+  margin-bottom: 50px;
+}
+
+.social-media a:hover {
+  background-color: aqua;
+  color: var(--snd-bf-color);
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 1.6rem;
+  color: var(--bg-color);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: cubic-bezier();
+  margin-bottom: 100rem;
+}
+
+.btn:hover {
+  box-shadow: none;
+}
+.About {
+  display: flex;
+  /* justify-content: center; */
+  align-items: left;
+  gap: 2rem;
+  background: var(--snd-bf-color);
+}
+
+.About-img {
+  width: 35vw;
+  align-items: right;
+}
+
+.heading {
+  text-align: left;
+  font-size: 4.5rem;
+}
+
+.About-content h2 {
+  text-align: left;
+  line-height: 1.2;
+  margin-bottom: 10rem;
+}
+.About-content h3 {
+  margin-bottom: 4rem;
+  color: aqua;
+  font-size: 4rem;
+}
+
+.About-content p {
+  font-size: 2rem;
+  margin: 2rem 0 4rem;
+}
+.Services h2 {
+  margin-bottom: 5rem;
+}
+.Services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.Services-container p {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 1.5rem;
+  margin-top: 3rem;
+}
+.Services-container h3 {
+  font-size: 3rem;
+  color: aqua;
+  /* margin-top: 3rem; */
+  margin: 1rem 0 1rem;
+}
+.Services-container .Services-box {
+  flex: 1 1 30rem;
+  background: var(--snd-bg-color);
+  padding: 2rem 1.5rem 3rem;
+  border-radius: 3rem;
+  text-align: center;
+  border: 0.2rem solid var(--bg-color);
+  transition: 0.5 ease;
+  border-bottom: 3rem;
+}
+.Services-container .Services-box:hover {
+  border-color: var(--main-color);
+  transform: scale(1.02);
+}
+
+.Services-box i {
+  font-size: 7rem;
+  color: var(--main-color);
+}
+
+.Services-box h3 {
+  font-size: 2.6rem;
+}
+.Services-box p {
+  font-size: 1.6rem;
+  margin: 1rem 0 1rem;
+}
+.Portfolio {
+  background: var(--snd-bf-color);
+}
+.Portfolio h2 {
+  margin-bottom: 4rem;
+  /* margin: 0.1rem 0 0.1rem; */
+}
+.Portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+.Portfolio-container .Portfolio-box {
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+  overflow: hidden;
+  display: flex;
+  /* max-width: 25rem;
+  max-height: 25rem; */
+  width: 300px; /* Set the desired width */
+  height: 210px; /* Set the desired height */
+  object-fit: cover; /* Ensures images cover the entire area without distortion */
+  margin: 10px; /* Optional: to add space between images */
+}
+.Portfolio-box img {
+  /* margin-top: 2rem; */
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0.7;
+}
+.Portfolio-box:hover img {
+  transform: scale(1.1);
+}
+
+.Portfolio-box .Portfolio-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(black, var(--main-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
+  transform: translateY(100%);
+  transition: 0.5s ease;
+}
+.Portfolio-box:hover .Portfolio-layer {
+  transform: translateY(0);
+}
+.Portfolio-layer h4 {
+  font-size: 3rem;
+  opacity: 0.5;
+}
+.Portfolio-layer p {
+  font-size: 1.6rem;
+  margin: 25rem 0 1rem;
+}
+
+.Portfolio-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background: var(--text-color);
+  border-radius: 50%;
+}
+
+.Portfolio-layer a i {
+  font-size: 2rem;
+  color: var(--snd-bg-color);
+}
+.Contact h2 {
+  margin-top: 7.5rem;
+}
+.Contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.Contact form.input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Contact form .input-box input,
+.Contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: white;
+  background: rgb(41, 35, 46);
+  border-radius: 0.8rem;
+  margin: 1.5rem 0;
+}
+.Contact form .input-box input {
+  width: 49%;
+}
+.Contact form textarea {
+  width: 70rem;
+  height: 20rem;
+  border-radius: 0.8rem;
+}
+.Contact form.btn {
+  margin-top: 2rem;
+  cursor: pointer;
+}
