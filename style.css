@@ -342,11 +342,19 @@ span {
   text-align: center;
   margin-top: 2rem;
 }
+
 .Contact form.input-box {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+.country-code-box {
+  display: flex;
+  align-items: center;
+  width: 90rem;
+}
+
 .Contact form .input-box input,
 .Contact form textarea {
   width: 100%;
@@ -358,11 +366,23 @@ span {
   margin: 1.5rem 0;
 }
 .Contact form .input-box input {
-  width: 49%;
+  width: 70%;
+  margin-right: 20rem;
+}
+
+.country-code-box select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+  margin-right: -1px; /* To avoid double border with input */
+  flex: 1; /* Add flex property */
+  width: 20rem;
+  margin-right: 20rem;
 }
 .Contact form textarea {
   width: 70rem;
-  height: 20rem;
+  height: 10rem;
   border-radius: 0.8rem;
 }
 .Contact form.btn {

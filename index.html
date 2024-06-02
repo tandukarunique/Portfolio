@@ -24,6 +24,7 @@
         <a href="#Services" Services="active">Services</a>
         <a href="#Portfolio" Portfolio="active">Portfolio</a>
         <a href="#Contact" Contact="active">Contact</a>
+        <a href="#" Blogs="active">Blogs</a>
       </nav>
     </header>
 
@@ -252,8 +253,20 @@
         </div>
 
         <div class="input-box">
-          <input type="number" placeholder="Mobile Number" />
-          <input type="text" placeholder=" Email Subject" />
+          <div class="country-code-box">
+            <select id="country-code" required>
+              <option value="+977">+977</option>
+              <option value="+44">+1</option>
+              <option value="+91">+91</option>
+              <!-- Add more country codes as needed -->
+            </select>
+            <input
+              type="number"
+              placeholder="Mobile Number"
+              id="mobile"
+              required
+            />
+          </div>
         </div>
         <textarea name="" id="" cols="30" rows="10" placeholder="Your message">
         </textarea>
