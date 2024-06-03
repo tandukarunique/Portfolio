@@ -351,8 +351,8 @@ span {
 
 .country-code-box {
   display: flex;
-  align-items: center;
-  width: 90rem;
+  align-items: left;
+  width: 95rem;
 }
 
 .Contact form .input-box input,
@@ -365,9 +365,13 @@ span {
   border-radius: 0.8rem;
   margin: 1.5rem 0;
 }
-.Contact form .input-box input {
+.Contact form .inputbox input {
   width: 70%;
-  margin-right: 20rem;
+  margin-right: 25rem;
+}
+.input-box .inputbox {
+  width: 200rem;
+  height: 60rem;
 }
 
 .country-code-box select {
@@ -378,7 +382,7 @@ span {
   margin-right: -1px; /* To avoid double border with input */
   flex: 1; /* Add flex property */
   width: 20rem;
-  margin-right: 20rem;
+  /* margin-right: 10rem; */
 }
 .Contact form textarea {
   width: 70rem;
