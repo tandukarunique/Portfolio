@@ -210,22 +210,22 @@ span {
   margin: 2rem 0 4rem;
 }
 .Services h1 {
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 }
 .Services-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 0.5rem;
 }
 .Services-container p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: 1.5rem 0 1.5rem;
   margin-top: 4rem;
 }
 .Services-container h3 {
-  font-size: 3rem;
+  font-size: 2rem;
   color: aqua;
   /* margin-top: 3rem; */
   margin: 1rem 0 1rem;
@@ -233,12 +233,13 @@ span {
 .Services-container .Services-box {
   flex: 1 1 30rem;
   background: var(--snd-bg-color);
-  padding: 2rem 1.5rem 3rem;
-  border-radius: 3rem;
+  padding: 2rem 1.5rem 7rem;
+  border-radius: 5rem;
   text-align: center;
   border: 0.2rem solid var(--bg-color);
   transition: 0.5 ease;
   border-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 .Services-container .Services-box:hover {
   border-color: var(--main-color);
